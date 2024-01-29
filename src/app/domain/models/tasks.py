@@ -1,8 +1,8 @@
 from sqlalchemy import String
 from sqlalchemy.orm import Mapped, mapped_column
 
-from src.app.domain.schemas import GetTasks
-from src.app.infrastructure.db import Base
+from app.domain.schemas import GetTasks
+from app.infrastructure.db import Base
 
 
 class Task(Base):
