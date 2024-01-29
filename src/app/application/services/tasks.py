@@ -1,5 +1,5 @@
 from app.application.protocols.unit_of_work import UoW
-from app.domain.schemas import CreateTasks, UpdateTasks, GetTasks
+from app.domain.schemas.tasks import CreateTasks, UpdateTasks, GetTasks
 
 
 class TasksService:

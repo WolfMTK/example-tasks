@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.domain.schemas import CreateTasks, GetTasks, UpdateTasks
+from app.domain.schemas.tasks import CreateTasks, GetTasks, UpdateTasks
 from app.application.services.tasks import TasksService
 
 
