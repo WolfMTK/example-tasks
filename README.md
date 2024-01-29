@@ -1,5 +1,7 @@
 # Запуск проекта
 
-1. Применить миграции: `alembic upgrade head`
+1. Установить зависимости: `pip install -e .`
 
-2. Запустить проект: `uvicorn src.main:app`
+2. Применить миграции: `alembic upgrade head`
+
+3. Запустить проект: `uvicorn app.main:app`
