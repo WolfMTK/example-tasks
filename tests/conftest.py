@@ -7,22 +7,22 @@ from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 
 try:
-    from src.main import app
+    from app.main import app
 except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `app`.')
 
 try:
-    from src.infrastructure.db import Base
+    from app.infrastructure.db import Base
 except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `Base`')
 
 try:
-    from src.application.protocols.unit_of_work import UnitOfWork
+    from app.application.protocols.unit_of_work import UnitOfWork
 except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `UnitOfWork`.')
 
 try:
-    from src.api.dependencies import unit_of_work
+    from app.api.dependencies import unit_of_work
 except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `unit_of_work`.')
 

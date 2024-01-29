@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from src.domain.schemas.tasks import CreateTasks, GetTasks, UpdateTasks
-from src.application.services.tasks import TasksService
+from app.domain.schemas.tasks import CreateTasks, GetTasks, UpdateTasks
+from app.application.services.tasks import TasksService
 
 
 from .dependencies import UoWDep
