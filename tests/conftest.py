@@ -12,7 +12,7 @@ except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `app`.')
 
 try:
-    from app.infrastructure.db import Base
+    from src.app.infrastructure.db import Base
 except (NameError, ImportError):
     raise AssertionError('Не обнаружен объект `Base`')
 
